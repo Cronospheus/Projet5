@@ -4,6 +4,6 @@ const renderConfirmPage = () => {
   let order = JSON.parse(localStorage.getItem("order"));
   const orderIdSpan = document.getElementById("orderId");
   orderIdSpan.innerHTML = "<br>" + order.orderId;
-  //   localStorage.clear();
+  localStorage.clear();
 };
 renderConfirmPage();
